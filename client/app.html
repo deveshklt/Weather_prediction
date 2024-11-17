@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script> <!-- Include app.js -->
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Prediction</h1>
+        <form id="weatherForm" class="form">
+            <label for="temperature">Temperature</label>
+            <input type="text" id="temperature" name="temperature" placeholder="Enter temperature" required>
+            
+            <label for="humidity">Humidity</label>
+            <input type="text" id="humidity" name="humidity" placeholder="Enter humidity" required>
+            
+            <label for="wind_speed">Wind Speed</label>
+            <input type="text" id="wind_speed" name="wind_speed" placeholder="Enter wind speed" required>
+            
+            <label for="cloud_cover">Cloud Cover</label>
+            <input type="text" id="cloud_cover" name="cloud_cover" placeholder="Enter cloud cover" required>
+            
+            <label for="pressure">Pressure</label>
+            <input type="text" id="pressure" name="pressure" placeholder="Enter pressure" required>
+            
+            <button type="button" onclick="predictWeather()">Predict Weather</button>
+        </form>
+        <h2 id="result"></h2>
+    </div>
+</body>
+</html>
